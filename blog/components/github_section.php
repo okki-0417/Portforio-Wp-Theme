@@ -27,7 +27,7 @@
     <?php if (!empty($data)): ?>
       <?php foreach ($data as $repo): ?>
         <article class="lg:col-span-1 col-span-2 w-full hover:opacity-50">
-          <a href="<?= $repo["html_url"]; ?>">
+          <a href="<?= $repo["html_url"]; ?>" target="blank">
             <div class="grid grid-cols-4 gap-2 p-2">
               <div class="col-span-1 p-2">
                 <img src="<?= get_template_directory_uri(); ?>/assets/images/github/github-mark.png" alt="">

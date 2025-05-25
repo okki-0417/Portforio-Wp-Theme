@@ -3,7 +3,7 @@
   $token = $secrets["qiita_token"];
 ?>
 
-<section class="grid grid-cols-">
+<section>
   <h3 class="lg:text-3xl text-2xl mt-8 font-semibold">Qiita</h3>
 
   <?php

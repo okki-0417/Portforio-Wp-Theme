@@ -23,7 +23,7 @@
     };
   ?>
 
-  <div class="grid grid-cols-2 gap-4">
+  <div class="mt-4 grid grid-cols-2 gap-4">
     <?php if (!empty($data)): ?>
       <?php foreach ($data as $repo): ?>
         <article class="lg:col-span-1 col-span-2 w-full hover:opacity-50">

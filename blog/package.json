@@ -3,8 +3,9 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
-		"build": "npx vite build",
-		"build-css": "npx @tailwindcss/cli -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind-output.min.css --watch --minify"
+		"build": "npx vite build --watch",
+		"build-css": "npx @tailwindcss/cli -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind-output.min.css --watch --minify",
+		"format": "npx prettier --write ."
 	},
 	"author": "",
 	"license": "ISC",
@@ -24,5 +25,8 @@
 		"tailwindcss": "^4.1.7",
 		"typescript": "^5.8.3",
 		"vite": "^6.3.5"
+	},
+	"dependencies": {
+		"@tailwindcss/line-clamp": "^0.4.4"
 	}
 }

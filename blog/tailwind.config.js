@@ -1,7 +1,9 @@
 module.exports = {
-	content: ["./components/**/*.php", "./assets/js/**/*.tsx", "./index.php"],
+	content: ["./components/**/*.php", "./assets/js/**/*.tsx", "./*.php"],
 	theme: {
 		extend: {},
 	},
-	plugins: [],
-}
+	plugins: [
+		require('@tailwindcss/line-clamp'),
+	],
+};

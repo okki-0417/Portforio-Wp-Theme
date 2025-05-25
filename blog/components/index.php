@@ -1,24 +1,10 @@
-<div class="bg-orange-50 max-w-screen min-h-screen flex flex-col">
+<div class="bg-pink-50 max-w-screen min-h-screen flex flex-col">
   <div>
     <?php get_template_part("components/header"); ?>
   </div>
 
   <main class="lg:mt-32 mt-12 grow">
-    <div class="lg:h-[70vh] h-[40vh]">
-      <div class="h-full w-screen du-carousel">
-        <div class="w-screen px-8 shrink-0 h-full flex justify-center du-carousel-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main-visuals/challenger1.jpg" alt="" class="object-contain h-full">
-        </div>
-
-        <div class="w-screen px-8 shrink-0 h-full flex justify-center du-carousel-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main-visuals/challenger2.jpg" alt="" class="object-contain h-full">
-        </div>
-
-        <div class="w-screen px-8 shrink-0 h-full flex justify-center du-carousel-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main-visuals/challenger3.jpg" alt="" class="object-contain h-full">
-        </div>
-      </div>
-    </div>
+    <div id="main-visual"></div>
 
     <section>
       <div class="mt-18 px-16 grid grid-cols-3 gap-4">
@@ -73,7 +59,7 @@
     </section>
 
     <section class="mt-16">
-
+      <div id="test" class="bg-cyan-200 w-lg mx-auto"></div>
     </section>
   </main>
 

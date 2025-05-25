@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from "react-dom/client"
+import "../css/tailwind-output.min.css"
+import MainVisualCarousel from "./MainVisualCarousel"
 
-const App = () => <h1>Hello from React + TypeScript!</h1>
+export const BASE_URL = (window as any).APP_CONFIG.BASE_URL
 
-const root = document.getElementById('my-react-root')
-if (root) {
-  ReactDOM.createRoot(root).render(<App />)
-}
+const mainVisual = document.getElementById("main-visual")
+
+if (mainVisual) ReactDOM.createRoot(mainVisual).render(<MainVisualCarousel />)
